@@ -579,7 +579,7 @@
                         </div>
                     </div>
                     <div class="action-wrap">
-                        <a href="" class="btn button-arrow">
+                        <a href="" class="btn button-arrow js-popup-open" data-popup="popup-question">
                             <div class="button-title">Оставить заявку </div>
                         </a>
                     </div>
@@ -594,12 +594,12 @@
                 <div class="items-wrap">
                     <!--item wrap-->
                     <div class="item-wrap">
-                        <div class="item-tile-video js-video" data-video="https://www.youtube.com/embed/ScMzIvxBSi4?controls=0">
+                        <a href="https://vimeo.com/259411563" class="item-tile-video" data-fancybox="video">
                             <div class="tile-bg">
                                 <img src="./img/video.jpg" alt="" class="img-bg-cover">
                             </div>
-                            <a href="" class="btn btn-action-ico ico-play js-btn-video"></a>
-                        </div>
+                            <div class="btn btn-action-ico ico-play"></div>
+                        </a>
                     </div>
                     <!--/item wrap-->
                 </div>
@@ -838,18 +838,24 @@
                                                 <div class="frm-row">
                                                     <div class="field-title">В каком мессенджере удобно общаться?</div>
                                                     <div class="frm-field field-buttons">
-                                                        <a href="" class="btn button-border">
-                                                            <div class="button-ico">
-                                                                <img src="./img/icons/socbutton01.svg" alt="">
-                                                            </div>
-                                                            <div class="button-title">WhatsApp</div>
-                                                        </a>
-                                                        <a href="" class="btn button-border">
-                                                            <div class="button-ico">
-                                                                <img src="./img/icons/socbutton02.svg" alt="">
-                                                            </div>
-                                                            <div class="button-title">Telegram</div>
-                                                        </a>
+                                                        <div class="frm-select-button">
+                                                            <input type="checkbox" id="button02-01">
+                                                            <label for="button02-01" class="btn button-border">
+                                                                <div class="button-ico">
+                                                                    <img src="./img/icons/socbutton01.svg" alt="">
+                                                                </div>
+                                                                <div class="button-title">WhatsApp</div>
+                                                            </label>
+                                                        </div>
+                                                        <div class="frm-select-button">
+                                                            <input type="checkbox" id="button02-02">
+                                                            <label for="button02-02" class="btn button-border">
+                                                                <div class="button-ico">
+                                                                    <img src="./img/icons/socbutton02.svg" alt="">
+                                                                </div>
+                                                                <div class="button-title">Telegram</div>
+                                                            </label>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="frm-row-submit">
@@ -1090,7 +1096,7 @@
                         </div>
                     </div>
                     <div class="button-inner-wrap">
-                        <a href="" class="btn">
+                        <a href="" class="btn js-popup-open" data-popup="popup-question">
                             <div class="button-title">Рассчитать стоимость</div>
                         </a>
                     </div>
@@ -1102,7 +1108,7 @@
                             <div class="tile-title-wrap">
                                 <div class="tile-title">Посмотрите видео о том, как мы будем делать ваш проект — этапы создания</div>
                             </div>
-                            <a href="" class="btn btn-action-ico ico-play"></a>
+                            <a href="https://vimeo.com/259411563" class="btn btn-action-ico ico-play" data-fancybox="video2"></a>
                         </div>
                     </div>
                 </div>
@@ -1274,18 +1280,24 @@
                         <div class="frm-row">
                             <div class="field-title">В каком мессенджере удобно общаться?</div>
                             <div class="frm-field field-buttons">
-                                <a href="" class="btn button-border">
-                                    <div class="button-ico">
-                                        <img src="./img/icons/socbutton01.svg" alt="">
-                                    </div>
-                                    <div class="button-title">WhatsApp</div>
-                                </a>
-                                <a href="" class="btn button-border">
-                                    <div class="button-ico">
-                                        <img src="./img/icons/socbutton02.svg" alt="">
-                                    </div>
-                                    <div class="button-title">Telegram</div>
-                                </a>
+                                <div class="frm-select-button">
+                                    <input type="checkbox" id="button01-01">
+                                    <label for="button01-01" class="btn button-border">
+                                        <div class="button-ico">
+                                            <img src="./img/icons/socbutton01.svg" alt="">
+                                        </div>
+                                        <div class="button-title">WhatsApp</div>
+                                    </label>
+                                </div>
+                                <div class="frm-select-button">
+                                    <input type="checkbox" id="button01-02">
+                                    <label for="button01-02" class="btn button-border">
+                                        <div class="button-ico">
+                                            <img src="./img/icons/socbutton02.svg" alt="">
+                                        </div>
+                                        <div class="button-title">Telegram</div>
+                                    </label>
+                                </div>
                             </div>
                         </div>
                         <div class="frm-row-submit">
@@ -1347,6 +1359,7 @@
                         <a href="" class="logo">
                             <img src="./img/main/logo.svg" alt="">
                         </a>
+                        <div class="studio-info"><a href="https://abaris.ru/site-creation/" target="_blank">Создание сайта</a> и <a href="https://abaris.ru/promotion/seo/">продвижение сайта</a> - <a href="https://abaris.ru/">Абарис</a></div>
                     </div>
                     <div class="info-wrap"><a href="">Политика <br>конфиденциальности</a></div>
                 </div>
@@ -1394,18 +1407,24 @@
                         <div class="frm-row">
                             <div class="field-title">В каком мессенджере удобно общаться?</div>
                             <div class="frm-field field-buttons">
-                                <a href="" class="btn button-border">
-                                    <div class="button-ico">
-                                        <img src="./img/icons/socbutton01.svg" alt="">
-                                    </div>
-                                    <div class="button-title">WhatsApp</div>
-                                </a>
-                                <a href="" class="btn button-border">
-                                    <div class="button-ico">
-                                        <img src="./img/icons/socbutton02.svg" alt="">
-                                    </div>
-                                    <div class="button-title">Telegram</div>
-                                </a>
+                                <div class="frm-select-button">
+                                    <input type="checkbox" id="button02-01">
+                                    <label for="button02-01" class="btn button-border">
+                                        <div class="button-ico">
+                                            <img src="./img/icons/socbutton01.svg" alt="">
+                                        </div>
+                                        <div class="button-title">WhatsApp</div>
+                                    </label>
+                                </div>
+                                <div class="frm-select-button">
+                                    <input type="checkbox" id="button02-02">
+                                    <label for="button02-02" class="btn button-border">
+                                        <div class="button-ico">
+                                            <img src="./img/icons/socbutton02.svg" alt="">
+                                        </div>
+                                        <div class="button-title">Telegram</div>
+                                    </label>
+                                </div>
                             </div>
                         </div>
                         <div class="frm-row-submit">

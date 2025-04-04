@@ -198,6 +198,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		spaceBetween: 0,
 		autoHeight: true,
 		speed: 400,
+		allowTouchMove: false,
 		pagination: {
 			el: '.slider-test-pagination',
 			clickable: false,

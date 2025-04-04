@@ -213,6 +213,17 @@ html.with-fancybox body.hide-scrollbar {
 .footer-info-panel {
 	color: #ffffff80;
 	padding-bottom: 10px;
+	.studio-info {
+		margin-top: 10px;
+		display: block;
+		opacity: 0.4;
+		font-size: 0.8em;
+		a {
+			&:hover {
+				color: var(--clr-base-white);
+			}
+		}
+	}
 	.inner-wrap  {
 		padding-top: 60px;
 		padding-bottom: 10px;
@@ -479,6 +490,11 @@ html.with-fancybox body.hide-scrollbar {
 		}
 	}
 	.footer-info-panel {
+		.studio-info {
+			text-align: center;
+			margin-left: -10px;
+			margin-right: -10px;
+		}
 		.inner-wrap {
 			padding-top: 23px;
 			padding-bottom: 35px;
@@ -610,6 +626,10 @@ html.with-fancybox body.hide-scrollbar {
 		}
 		.info-wrap {
 			padding-top: 0;
+		}
+		.studio-info {
+			margin-left: -80px;
+			margin-right: -80px;
 		}
 	}
 }
