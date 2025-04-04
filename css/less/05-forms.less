@@ -1,0 +1,273 @@
+/* ----------------------------------- *\
+			forms elements styles
+\* ----------------------------------- */
+.frm-main {
+	margin: 0 auto;
+	color: var(--clr-base-light);
+	.frm-row-submit {
+		padding-top: 2px;
+		.frm-field {
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		.btn {
+			width: 100%;
+		}
+	}
+	.field-buttons {
+		display: flex;
+		.btn {
+			flex-shrink: 0;
+			padding: 0 10px;
+			height: 48px;
+			font-size: 12px;
+			text-transform: uppercase;
+			font-weight: bold;
+			max-width: calc(50% - 3px);
+			width: 147px;
+			margin: 0 5px 0 0;
+			&:last-child {
+				margin-right: 0;
+			}
+			.button-ico {
+				margin-right: 10px;
+			}
+		}
+	}
+}
+.field-title {
+	display: block;
+	margin-bottom: 10px;
+	padding: 0 5px;
+	width: 100%;
+	flex-shrink: 0;
+}
+.frm-row,
+.frm-field,
+.frm-row-submit {
+    display: flex;
+    flex-wrap: wrap;
+	position: relative;
+}
+.frm-row,
+.frm-row-submit {
+	margin: 0 -5px;
+}
+.frm-field {
+    display: block;
+    width: 100%;
+	padding: 0 5px;
+	margin-bottom: 10px;
+}
+.frm-select-button {
+	display: block;
+	flex-shrink: 0;
+	line-height: 1;
+	position: relative;
+	overflow: hidden;
+	input {
+		position: absolute;
+		top: 0;left: 0;
+		opacity: 0;
+		&:checked {
+			&~.btn.button-border {
+				background-color: var(--clr-att);
+				border: 1px solid var(--clr-att);
+				color: var(--clr-base-white);
+				.button-ico {
+					filter: brightness(0) invert(1);
+				}
+			}
+		}
+	}
+	.btn {
+		min-width: 185px;
+		height: 70px;
+		&.button-border {
+			&:not(:hover) {
+				color: var(--clr-base-white);
+			}
+		}
+	}
+}
+.frm-select, .frm-select-tile {
+	position: relative;
+	display: block;
+    line-height: 1;
+	input {
+		display: block;
+		position: absolute;
+		top: 0;left: 0;
+		width: 0;height: 0;
+		opacity: 0;
+		margin: 0;
+		padding: 0;
+		&:checked {
+			&~label {
+				&:after {
+					opacity: 1;
+				}
+			}
+		}
+	}
+	label {
+		display: block;
+		position: relative;
+		cursor: pointer;
+        &:before, &:after {
+            content: "";
+            display: block;
+            position: absolute;
+        }
+		&:after {
+			opacity: 0;
+		}
+	}
+}
+
+.frm-select-tile {
+	min-height: 100%;
+	line-height: 1;
+	display: flex;
+	flex-direction: column;
+	label {
+		width: 100%;
+		flex: 1;
+		display: block;
+		align-items: center;
+		height: 100%;
+		background: #2A282C;
+		border-radius: 16px;
+		border: 1px solid var(--clr-att);
+		padding: 15px 15px 15px 54px;
+		font-size: 14px;
+		line-height: 1.5;
+		&:before, &:after {
+			width: 20px;height: 20px;
+			border-radius: 50%;
+			position: absolute;
+			top: 25px;left: 25px;
+			margin: -10px 0 0 -10px;
+			border: 1px solid var(--clr-att);
+		}
+		&:after {
+			width: 10px;height: 10px;
+			background: var(--clr-att);
+			border: none;
+			margin: -5px 0 0 -5px;
+		}
+	}
+}
+.frm-select {
+	font-size: 13px;
+	line-height: 20px;
+	&.form-input-content {
+		label {
+			&:before {
+				background-color: #1F1D25;
+				border-color: #545454;
+			}
+		}
+	}
+	input {
+		&:checked {
+			&~label {
+				&:after {
+					opacity: 1;
+				}
+			}
+		}
+	}
+	label {
+		min-height: 20px;
+		padding-left: 27px;
+		&:before, &:after {
+			width: 20px;height: 20px;
+			top: 10px;left: 10px;
+			margin: -10px 0 0 -10px;
+			border: 1px solid var(--clr-base-light);
+			background: #fff;
+			border-radius: 2px;
+		}
+		&:after {
+			border-radius: 0;
+			border: none;
+			background: url(../img/icons/check.svg) center / 24px auto no-repeat;
+			opacity: 0;
+		}
+	}
+	a {
+		color: inherit;
+		&:hover {
+			color: var(--clr-att);
+		}
+	}
+}
+@media (min-width: 768px) {
+	.frm-select-tile {
+		label {
+			padding: 19px 58px 19px 19px;
+			&:before, &:after {
+				left: auto;right: 29px;
+				margin: -10px -10px 0 0;
+			}
+			&:after {
+				margin: -5px -5px 0 0;
+			}
+		}
+	}
+	.frm-main {
+		.field-buttons {
+			.btn {
+				margin-right: 20px;
+				width: 168px;
+				font-size: 15px;
+				max-width: calc(50% - 10px);
+			}
+		}
+	}
+	.frm-row,
+	.frm-row-submit {
+		margin: 0 -8px;
+	}
+	.frm-field {
+		padding: 0 8px;
+		margin-bottom: 16px;
+	}
+	.field-title {
+		margin-bottom: 20px;
+		padding: 0 8px;
+	}
+	.frm-select {
+		line-height: 24px;
+		font-size: 16px;
+		label {
+			min-height: 24px;
+			&:before, &:after {
+				top: 12px;
+			}
+		}
+	}
+	
+}
+@media (min-width: 1025px) {
+	.frm-select-tile {
+		label {
+			font-size: 16px;
+			min-height: 126px;
+		}
+	}
+	.frm-row,
+	.frm-row-submit {
+		margin: 0 -1rem;
+	}
+	.frm-field {
+		padding: 0 1rem;
+		margin-bottom: 2rem;
+	}
+	.field-title {
+		margin-bottom: 2rem;
+		padding: 0 1rem;
+	}
+}
