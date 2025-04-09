@@ -959,12 +959,22 @@ html.with-fancybox body.hide-scrollbar {
   border-radius: 16px;
   overflow: hidden;
   background: #2A282C;
-  border: 1px solid var(--clr-att);
   padding: 14px 14px 70px 14px;
   font-size: 14px;
   line-height: 1.2;
   color: var(--clr-base-white);
   min-height: 165px;
+}
+.item-tile-ext .tile-label {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  cursor: pointer;
+  border: 1px solid var(--clr-att);
+  border-radius: 16px;
 }
 .item-tile-ext .tile-photo-wrap {
   position: absolute;
@@ -983,6 +993,16 @@ html.with-fancybox body.hide-scrollbar {
 }
 .item-tile-ext:hover {
   color: var(--clr-base-white);
+}
+.item-tile-ext .tile-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  opacity: 0;
+}
+.item-tile-ext .tile-input:checked ~ .tile-label {
+  border-width: 3px;
 }
 .item-tile-round-button.btn {
   display: -ms-flexbox;
