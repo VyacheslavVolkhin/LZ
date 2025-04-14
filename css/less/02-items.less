@@ -1,6 +1,38 @@
 /* ----------------------------------- *\
 			items styles
 \* ----------------------------------- */
+.item-tile-action-video {
+	display: flex;
+	align-items: center;
+	border-radius: 10px;
+	background: linear-gradient(to right, #1DC9CE, #009ED5);
+	font-size: 10px;
+	line-height: 1.3;
+	font-weight: 500;
+	color: #fff;
+	padding: 10px;
+	border-radius: 16px;
+	.tile-title {
+		font-size: 11px;
+		font-weight: bold;
+		margin-bottom: 5px;
+	}
+	.tile-ico {
+		flex-shrink: 0;
+		width: 54px;height: 54px;
+		background: #fff;
+		border-radius: 50%;
+		img, svg {
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+	.tile-info-wrap {
+		flex: 1;
+		padding-left: 20px;
+		color: #fff;
+	}
+}
 .item-tile-ext {
 	display: block;
 	position: relative;
@@ -16,13 +48,13 @@
 	min-height: 165px;
 	.tile-label {
 		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
+		top: -1px;
+		bottom: -1px;
+		left: -1px;
+		right: -1px;
 		z-index: 5;
 		cursor: pointer;
-		border: 1px solid var(--clr-att);
+		border: 2px solid var(--clr-att);
 		border-radius: 16px;
 	}
 	.tile-photo-wrap {
@@ -48,7 +80,7 @@
 		opacity: 0;
 		&:checked {
 			&~.tile-label {
-				border-width: 3px;
+				border-width: 5px;
 			}
 		}
 	}
@@ -454,6 +486,16 @@
 	font-size: 16px;
 	font-weight: bold;
 	color: #fff;
+}
+@media (max-width: 639px) {
+	.item-tile-action {
+		.tile-title {
+			text-transform: uppercase;
+			font-size: 12px;
+			line-height: 1.3;
+			padding-top: 30px;
+		}
+	}
 }
 @media (min-width: 768px) {
 	.item-tile-ext {

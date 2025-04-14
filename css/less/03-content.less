@@ -3,6 +3,9 @@
 \* ----------------------------------- */
 .main-test-box {
 	position: relative;
+	.item-tile-action-video {
+		margin: 10px 0 0 0;
+	}
 	.sl-wrap {
 		min-height: 490px;
 	}
@@ -889,10 +892,36 @@ body.popup-open {
 		}
 	}
 }
+@media (max-width: 639px) {
+	@supports (display: contents) {
+		.main-catalog-box {
+			.items-inner-wrap {
+				overflow: hidden;
+			}
+			.item-wrap {
+				display: contents;
+			}
+			.items-wrap {
+				margin: 0 -10px;
+				flex-wrap: wrap;
+			}
+			.item-tile-action  {
+				width: calc(50% - 20px);
+				flex-shrink: 0;
+				margin: 0 10px 20px 10px;
+				&:last-child {
+					margin-bottom: 20px;
+				}
+			}
+		}
+	}
+}
 @media (min-width: 768px) {
 	.main-test-box {
 		padding: 60px 0;
-		
+		.item-tile-action-video {
+			display: none;
+		}
 		.slider-wrap {
 			overflow: visible;
 		}
